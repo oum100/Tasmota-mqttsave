@@ -5,10 +5,11 @@ import { Console } from "console";
 
 const prisma = new PrismaClient();
 
-const enableFlag = useRuntimeConfig().enableFlag
+const enableFlag = process.env.ENABLE_FLAG
 
 console.log('This is the index.js file in the api folder')
 console.log('Connecting to FLIPUP mqtt broker')
+console.log('Enable Flag: ',enableFlag)
 
 
 let client = connect({

@@ -2,12 +2,12 @@
 
 export default defineNuxtConfig({
     runtimeConfig:{
-        public:{
-            mqttHost:   process.env.MQTT_HOST,
-            mqttPort:   process.env.MQTT_PORT,
-            mqttUser:   process.env.MQTT_USER,
-            mqttPass:   process.env.MQTT_PASS,
+        mqttHost:   process.env.MQTT_HOST,
+        mqttPort:   process.env.MQTT_PORT,
+        mqttUser:   process.env.MQTT_USER,
+        mqttPass:   process.env.MQTT_PASS,
 
+        public:{
             enableFlag: process.env.ENABLE_FLAG
         }
         
