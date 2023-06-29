@@ -1,0 +1,22 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "mqtt": "^4.3.7",
+    "nuxt": "^3.3.3",
+    "prisma": "^4.15.0"
+  },
+  "dependencies": {
+    "@prisma/client": "4.15.0",
+    "consola": "^3.0.1",
+    "u8-mqtt": "0.3.2-0"
+  }
+}

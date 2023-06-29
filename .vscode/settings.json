@@ -1,0 +1,10 @@
+{
+  "vsmqtt.brokerProfiles": [
+    {
+      "name": "FIM-MQTT",
+      "host": "10.50.12.150",
+      "port": 1883,
+      "clientId": "vsmqtt_client"
+    }
+  ]
+}
