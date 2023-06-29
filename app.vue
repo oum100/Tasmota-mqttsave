@@ -1,8 +1,5 @@
-<script setup lang="ts">
-  // const { client } = useMqtt()
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>
-  </div>
+  <NuxtPage />
 </template>
