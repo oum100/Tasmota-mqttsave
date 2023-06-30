@@ -97,15 +97,20 @@ client.on('message', async(topic, message) => {
             }
             // console.log("devInfo: ",devInfo)
     
-            const data = await prisma.energy
-            .create({
-                data:devInfo
-            })
-            .catch(async(err) => {
-                throw(err)
-            })
+            // const data = await prisma.energy
+            // .create({
+            //     data:devInfo
+            // })
+            // .catch(async(err) => {
+            //     throw(err)
+            // })
     
-            console.log("Save this: ",data)
+            // console.log("Save this: ",data)
+
+            const data = $fetch('/api/mqttSave',{
+                method:'POST',
+                body: devInfo
+            })
         }  
     }
   
