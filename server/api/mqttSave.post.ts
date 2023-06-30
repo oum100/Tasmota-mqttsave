@@ -15,6 +15,7 @@ export default defineEventHandler( async(event) => {
     const track = await prisma.energy
     .create({
         data: {
+            Type:body.Type,
             Device: body.Device,
             DateTime: body.DateTime,
             Voltage: body.Voltage,
